@@ -1,0 +1,154 @@
+@import "variables";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* STYLES */
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $size;
+  height: $size;
+  line-height: 2;
+  text-align: center;
+}
+
+.form-text, .login-btn {
+  text-transform: uppercase;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $size;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: .15em;
+  font-size: 2rem;
+  color: $dark-grey;
+}
+
+.left-elements{
+  text-align: left;
+  margin-left: $margin-size;
+  margin-top: 20px;
+  color: $grey;
+}
+
+input:not(.login-btn){
+  width: 77%;
+  height: 35px;
+  border-radius: 8px;
+  color: #FFF;
+}
+
+.login-btn  {
+  margin-top: 20px;
+  border: 1px solid #c1b5ae;
+  border-radius: 10px;
+  padding: 13px 100px;
+  background: -moz-linear-gradient(left, $right-gradient 0%, $left-gradient 100%);
+  background: -webkit-linear-gradient(left, $right-gradient 0%, $left-gradient 100%);
+  background: linear-gradient(left, $right-gradient 0%, $left-gradient 100%);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.bottom-text {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grey-text {
+  color: $grey;
+}
+
+#mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(38, 38, 42, 0.8);
+  z-index: 9999;
+}
+
+.popup_block {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+
+
