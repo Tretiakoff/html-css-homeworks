@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "Founders Grotesk Regular";
+    src: url(../fonts/founders-grotesk-regular.ttf);
+}
+
+@font-face {
+    font-family: "Stanley Poster";
+    src: url(../fonts/stanleyposter-regular.otf);
+}
+
+@font-face {
+    font-family: "Aileron Regular";
+    src: url(../fonts/aileron-regular.otf);
+}
+
+@font-face {
+    font-family: "Aileron Italic";
+    src: url(../fonts/aileron-italic.otf);
+}
+
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url(../fonts/myriad-pro-regular.otf);
+}
+
+/* STYLES */
+
+html, body {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 305px;
+}
+
+.top-menu {
+    height: 45px;
+    padding: 0 325px 0 325px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.top-left-nav {
+    float: left;
+    margin-top: 1rem;
+}
+
+.top-right-nav {
+    float: right;
+    margin-top: 1rem;
+}
+
+.top-menu-login {
+    border-right: 1px solid #b2b2b2;
+    border-style: dotted;
+    padding-right: 12px;
+}
+
+.top-menu-register {
+    margin-left: 12px;
+}
+
+.search-img {
+    border-left: 1px solid #b2b2b2;
+    border-style: dotted;
+    margin-left: 16px;
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.top-menu-register, .top-menu-login {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+.basket-img {
+    margin-right: 10px;
+}
+
+.basket-number {
+    position: relative;
+    display: inline-block;
+    top: -2px;
+}
+
+.bottom-menu {
+    height: 60px;
+    width: 100%;
+    margin-top: 200px;
+    font-family: "Founders Grotesk Regular", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-bottom-menu {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    color: black;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+.header-bottom-menu-elements {
+    margin-left: 6px;
+    letter-spacing: 2px;
+}
+
+.right-dotted-border {
+    border-right: 1px solid #b2b2b2;
+    border-style: dotted;
+}
+
+.fa-chevron-down, .home {
+    padding-right: 12px;
+}
+
+main, main section {
+    position: relative;
+}
+
+section h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Stanley Poster", sans-serif;
+    font-size: 3em;
+}
+
+main {
+    margin-top: 5px;
+    overflow-x: hidden;
+    overflow: hidden;
+    height: 1192px;
+}
+
+section {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.food-img-container {
+    left: -427px;
+}
+
+.newsletter-container {
+    top: -516px;
+}
+
+main form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
+input[type="email"] {
+    width: 249px;
+    height: 38px;
+}
+
+input {
+    border: 0;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    position: relative;
+    left: -4px;
+    background-color: #a9c7bf;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+    width: 107px;
+    height: 40px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+main label, main h3 {
+    font-family: "Aileron Regular", sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+main div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main h4 {
+    font-family: "Aileron Italic", sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.green-icons {
+    color: #a9c7bf;
+}
+
+.social-network-container {
+    position: relative;
+    top: -519px;
+}
+
+.art-img-container {
+    top: -1028px;
+    left: 428px;
+}
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    height: 200px;
+    width: 1261px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-family: "Myriad Pro Regular" , sans-serif;
+    font-size: .9em;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer table {
+    width: 100%;
+    text-align: center;
+}
+
+footer table tr th, footer table td {
+    width: 33.33%;
+}
+
+footer table tr th {
+    font-family: "Stanley Poster", sans-serif;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+footer table tr td {
+    font-family: "Founders Grotesk Regular", sans-serif;
+    font-size: 1.1em;
+}
+
+
